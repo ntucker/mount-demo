@@ -1,0 +1,19 @@
+{
+  "@anansi/generator-js": {
+    "githubOrg": "ntucker",
+    "rootPath": "src",
+    "assetPath": "dist",
+    "appName": "temp",
+    "githubDomain": "github.com",
+    "testing": true,
+    "features": [
+      "testing"
+    ],
+    "badges": "",
+    "spa": true,
+    "webpack": true,
+    "reactMode": "concurrent",
+    "style": "linaria",
+    "devssl": true
+  }
+}
