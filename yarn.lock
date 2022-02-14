@@ -14,12 +14,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@anansi/babel-preset@npm:2.8.2":
-  version: 2.8.2
-  resolution: "@anansi/babel-preset@npm:2.8.2"
+"@anansi/babel-preset@npm:^2.8.3":
+  version: 2.8.3
+  resolution: "@anansi/babel-preset@npm:2.8.3"
   dependencies:
     "@anansi/ts-utils": ^0.2.4
     "@babel/plugin-proposal-class-properties": ^7.16.7
+    "@babel/plugin-proposal-class-static-block": ^7.16.7
     "@babel/plugin-proposal-decorators": ^7.17.2
     "@babel/plugin-proposal-export-default-from": ^7.16.7
     "@babel/plugin-proposal-export-namespace-from": ^7.16.7
@@ -52,6 +53,8 @@ __metadata:
     "@babel/core": ^7.12.0
     "@babel/runtime": ^7.7.0
     babel-minify: ^0.5.1
+    lodash: "*"
+    ramda: "*"
     react-hot-loader: ^4.12.0
     react-refresh: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0-0
     typescript: ^3.0.0 || ^4.0.0
@@ -60,13 +63,17 @@ __metadata:
       optional: true
     babel-minify:
       optional: true
+    lodash:
+      optional: true
+    ramda:
+      optional: true
     react-hot-loader:
       optional: true
     react-refresh:
       optional: true
     typescript:
       optional: true
-  checksum: a86580a7f65e22af033515e2aa1cab98c6b7d7971bfa21af7091cf355ad5deac6e7739a1fecc68a229de0aca79d440b59fb17f1edd68a8646d63649f2a381c27
+  checksum: a2bd69dee2a56c1cedf3fb3707fafc65fe9868682e789d10444ff5312d43024b27a49b460aa38275396e6a9a6d9a275b04c027766c03272d4b0d8e5f0f9d2cd7
   languageName: node
   linkType: hard
 
@@ -107,21 +114,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@anansi/jest-preset@npm:0.5.26":
-  version: 0.5.26
-  resolution: "@anansi/jest-preset@npm:0.5.26"
+"@anansi/jest-preset@npm:^0.6.0":
+  version: 0.6.0
+  resolution: "@anansi/jest-preset@npm:0.6.0"
   dependencies:
     "@anansi/ts-utils": ^0.2.4
     babel-jest: ^27.5.1
     core-js: ^3.21.0
     identity-obj-proxy: ^3.0.0
+    jest-pnp-resolver: ^1.2.2
     mitt: ^3.0.0
     semver: ^7.3.5
     ts-jest: ^27.1.3
     whatwg-fetch: ^3.0.0
   peerDependencies:
     jest: ^27.0.0
-  checksum: 9bcdcaa96281acb8ab70b76a3331e529216c23d90f166f54a852b3cfceaa0c79e38ef3c48a71a39a547284c64d88d335d27cc332bb4147e3deb64ce3092530a1
+  checksum: 5a986731e3136ae790d8ff3d407fc33b2d707c0820049ea6e9c3161480f53aac6ff8825be97e805b8f1cf277a79dd54240546aa32469e8cc2b4eaf22bdc18d0c
   languageName: node
   linkType: hard
 
@@ -134,9 +142,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@anansi/webpack-config@npm:11.2.2":
-  version: 11.2.2
-  resolution: "@anansi/webpack-config@npm:11.2.2"
+"@anansi/webpack-config@npm:^11.2.3":
+  version: 11.2.3
+  resolution: "@anansi/webpack-config@npm:11.2.3"
   dependencies:
     "@babel/runtime": ^7.17.2
     "@ntucker/linaria-webpack5-loader": 3.0.0-beta.17
@@ -162,12 +170,14 @@ __metadata:
     duplicate-package-checker-webpack-plugin: ^3.0.0
     events: ^3.2.0
     file-loader: ^6.2.0
+    find-cache-dir: ^3.3.2
     html-loader: ^3.1.0
     html-webpack-plugin: ^5.5.0
     https-browserify: ^1.0.0
     is-wsl: ^2.2.0
     markdown-loader: ^8.0.0
     mini-css-extract-plugin: ^2.5.3
+    mkdirp: ^1.0.4
     os-browserify: ^0.3.0
     path: ^0.12.7
     path-browserify: ^1.0.1
@@ -189,6 +199,7 @@ __metadata:
     stream-browserify: ^3.0.0
     stream-http: ^3.2.0
     string_decoder: ^1.3.0
+    strip-ansi: ^6.0.0
     svgo: ^2.8.0
     svgo-loader: ^3.0.0
     terser-webpack-plugin: ^5.3.1
@@ -211,6 +222,7 @@ __metadata:
     "@linaria/babel-preset": ^3.0.0-beta.3 || ^3.0
     "@storybook/react": ^6.2.0
     node-sass: ^7.0.1
+    react: "*"
     react-refresh: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0-0
     svgo: ^2.8.0
     webpack: ^5.12.0
@@ -227,6 +239,8 @@ __metadata:
       optional: true
     node-sass:
       optional: true
+    react:
+      optional: true
     react-refresh:
       optional: true
     svgo:
@@ -235,7 +249,7 @@ __metadata:
       optional: true
     webpack-dev-server:
       optional: true
-  checksum: 4e96cd0bc763748d4bae9d2737251f2e423001db69360cce97616ba37cc58021d2bc010b41bd5a77d08448acf780ce55affe07f6777d793bebfeea72fff574c0
+  checksum: 9a23123469d73f7cfdb391fe4dc06a26fca9e3e8cd74435115f8c78a57e6ae9c3e2c5623999674f077b4f0bdaf69beb6b42720bf8398b801c42c37c55d73ba1e
   languageName: node
   linkType: hard
 
@@ -708,7 +722,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-export-namespace-from@npm:^7.16.7":
+"@babel/plugin-proposal-export-namespace-from@npm:^7.16.0, @babel/plugin-proposal-export-namespace-from@npm:^7.16.7":
   version: 7.16.7
   resolution: "@babel/plugin-proposal-export-namespace-from@npm:7.16.7"
   dependencies:
@@ -2969,7 +2983,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-test-renderer@npm:>=16.9.0":
+"@types/react-test-renderer@npm:>=16.9.0, @types/react-test-renderer@npm:^17.0.1":
   version: 17.0.1
   resolution: "@types/react-test-renderer@npm:17.0.1"
   dependencies:
@@ -6855,7 +6869,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"find-cache-dir@npm:^3.3.1":
+"find-cache-dir@npm:^3.3.1, find-cache-dir@npm:^3.3.2":
   version: 3.3.2
   resolution: "find-cache-dir@npm:3.3.2"
   dependencies:
@@ -9707,12 +9721,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "mount-demo@workspace:."
   dependencies:
-    "@anansi/babel-preset": 2.8.2
+    "@anansi/babel-preset": ^2.8.3
     "@anansi/browserslist-config": 1.3.3
     "@anansi/eslint-plugin": 0.12.8
-    "@anansi/jest-preset": 0.5.26
-    "@anansi/webpack-config": 11.2.2
+    "@anansi/jest-preset": ^0.6.0
+    "@anansi/webpack-config": ^11.2.3
     "@babel/core": 7.17.2
+    "@babel/runtime": ^7.17.2
     "@linaria/babel-preset": 3.0.0-beta.17
     "@linaria/core": 3.0.0-beta.15
     "@linaria/react": 3.0.0-beta.17
@@ -9726,6 +9741,7 @@ __metadata:
     "@types/jest": 27.4.0
     "@types/react": 17.0.39
     "@types/react-dom": 17.0.11
+    "@types/react-test-renderer": ^17.0.1
     cross-env: 7.0.3
     eslint: ^7.0.0
     eslint-plugin-import: ^2.22.0
